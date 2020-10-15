@@ -1,0 +1,1033 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+
+
+html
+  scroll-behavior: smooth
+
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+::selection
+  background-color: $accent
+  color: #fff
+
+
+*
+  padding: 0px
+  margin: 0px
+  bottom: 0px
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+\:focus, :active
+  outline: none
+
+a
+  &:focus, &:active
+    outline: none
+
+aside, nav, footer, header, section
+  display: block
+
+html
+  height: 100%
+
+body
+  height: 100%
+  line-height: 1
+  font-size: 14px
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+  &::-moz-focus-inner
+    padding: 0
+    bottom: 0
+
+a
+  text-decoration: none
+
+  &:visited, &:hover
+    text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+  font-weight: inherit
+  font-size: inherit
+
+.Quicksand
+  font-family: 'Quicksand', sans-serif
+
+html
+  scroll-behavior: smooth
+
+body
+  font-family: 'Quicksand', sans-serif
+
+.switcher
+  display: flex
+  margin: 0 20px
+
+  input
+    clip: rect(0, 0, 0, 0)
+    height: 0px
+    width: 0px
+    border: 0
+
+  label
+    width: 50%
+    color: #0f7bff
+    font-size: 16px
+    font-weight: bold
+    line-height: 1
+    text-align: center
+    padding: 12px 16px
+    margin-right: -1px
+    transition: all 0.1s ease-in-out
+    border: 2px solid #0f7bff
+    border-radius: 50px 0 0 50px
+
+    &:last-child
+      border-radius: 0 50px 50px 0
+
+    &:hover
+      cursor: pointer
+
+  input:checked + label
+    background-color: #0f7bff
+    color: #fff
+    box-shadow: none
+
+.button
+  font-size: 16px
+  font-weight: bold
+  background-color: #fff
+  border-radius: 50px
+  padding: 10px 50px
+  cursor: pointer
+  outline: none
+  flex-shrink: 0
+  border: 2px solid #0f7bff
+
+.standard
+  a
+    color: #0f7bff
+
+  &:hover
+    background-color: #0f7bff 
+    transition: all 0.3s ease
+
+    a
+      color: #ffffff
+
+.blue
+  a
+    color: #fff
+
+  &:hover
+    background-color: #0f7bff 
+    transition: all 0.3s ease
+
+    a
+      color: #ffffff
+
+.sec-inner
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+
+.sec-header
+  background: #fff url(../img/header/bg.png) no-repeat 50% (50% / cover)
+
+  .sec-inner
+    height: 1042px
+    position: relative
+
+.sec-header-navitems
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 20px
+
+.sec-header-navitems__logo
+  width: 180px
+  height: 100px
+  background: #0f7bff
+  color: #fff
+  font-size: 36px
+  text-align: center
+  line-height: 100px
+  font-weight: 500
+  border-radius: 0 0px 20px 20px
+
+.sec-header-navitems__burger
+  display: none
+  width: 50px
+  background-color: #fff
+  position: relative
+  color: #fff
+  height: 30px
+  background: transparent
+
+.sec-header-navitems__menu
+  display: flex
+  flex-grow: 1
+  flex-direction: row-reverse
+
+.sec-header-navitems__menu-list
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+  li
+    padding: 0 40px 0 0
+
+    &:last-child
+      padding: 0 60px 0 0
+
+.sec-header-navitems__menu-list__link
+  color: #b7b9ba
+  font-size: 16px
+  font-weight: 500
+  text-transform: uppercase
+  line-height: 27px
+
+  &:hover
+    color: #0f7bff
+    font-size: 16px
+    line-height: 27px
+
+.sec-header-navitems__signup
+  background-color: #0063dd
+
+  a
+    font-weight: bold
+
+.sec-header-offer
+  display: flex
+  color: black
+  margin: 0 23%
+  height: 30%
+
+.sec-header-wrapper
+  text-align: center
+  margin: auto
+  width: 664px
+
+.sec-header-wrapper__title, .sec-header-wrapper__subtitle
+  text-align: center
+  justify-content: center
+
+.sec-header-wrapper__title
+  font-size: calc(17px + 15 * (100vw / 1920))
+  color: #333333
+  line-height: 24px
+  margin-bottom: 30px
+  font-weight: bold
+
+.sec-header-wrapper__text
+  font-size: calc(14px + 2 * (100vw / 1920))
+  color: #929292
+  line-height: 27px
+  padding-bottom: 15px
+  margin-bottom: 10px
+
+.sec-header-wrapper__buttons
+  display: flex
+  justify-content: space-between
+  margin: 0 16%
+
+.sec-header .scroll-down
+  position: absolute
+  bottom: -3%
+  left: 48%
+  cursor: pointer
+
+  a.scroll-down__button img
+    width: 70px
+    height: 70px
+    border-radius: 50%
+
+
+
+.sec-inner-main
+  display: flex
+  margin: 0 auto
+  max-width: 1150px
+
+.sec-features
+  background-color: #f5fcfd
+  height: 635px
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+.sec-features__icons
+  height: 350px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.sec-features__icon
+  height: 293px
+  width: 30%
+  display: flex
+  background-color: #fff
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  align-items: center
+  -webkit-box-shadow: 0px 0px 20px 0px #f0f0f0
+  -moz-box-shadow: 0px 0px 20px 0px #f0f0f0
+  -ms-box-shadow: 0px 0px 20px 0px #f0f0f0
+  box-shadow: 0px 0px 20px 0px #f0f0f0
+  padding: 2px
+
+.sec-features__icon-img
+  margin-bottom: 30px
+
+.sec-features__icon-title
+  color: #333333
+  font-size: 18px
+  font-weight: 500
+  margin-bottom: 20px
+
+.sec-features__icon-text
+  color: #929292
+  font-size: 16px
+  line-height: 27px
+
+.icon-1
+  align-self: flex-start
+
+.icon-2
+  align-self: flex-end
+
+.icon-3
+  align-self: flex-start
+
+.sec-inner-about
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  margin: 0 16%
+  height: 100%
+
+.sec-about
+  height: 1120px
+
+  .second
+    flex-direction: row-reverse
+
+    .sec-about__container-pics
+      display: flex
+      position: relative
+      width: 682px
+
+      .diamond
+        width: 422px
+        height: 483px
+        background: #0f7bff
+        border-radius: 50px
+        transform: rotate(-34deg)
+        position: relative
+        top: 50px
+        left: 201px
+        z-index: 1
+
+.sec-about__container
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  width: 100%
+  height: 605px
+
+.sec-about__container-pics
+  display: flex
+  position: relative
+
+  .diamond
+    width: 418px
+    height: 483px
+    background: #0f7bff
+    border-radius: 50px
+    transform: rotate(-38deg)
+    position: relative
+    top: 50px
+    left: 55px
+    z-index: 1
+
+  .back-pic
+    position: relative
+    left: -265px
+    top: 116px
+    z-index: 2
+    height: fit-content
+    -webkit-box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+    -moz-box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+    -ms-box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+    box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+
+  .front-pic
+    left: 329px
+    top: 147px
+    z-index: 3
+    position: absolute
+    -webkit-box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+    -moz-box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+    -ms-box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+    box-shadow: 3px 3px 13px 0px rgba(105, 105, 105, 0.75)
+
+.sec-about__container-info
+  width: auto
+  margin-right: -36px
+  text-align: left
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-width: 250px
+
+.sec-about__container-title
+  font-weight: 500
+  font-size: 32px
+  margin-bottom: 20px
+  color: #333333
+
+.sec-about__container-text
+  font-size: 16px
+  line-height: 27px
+  margin-bottom: 20px
+  color: #929292
+
+.sec-about__container-read-more
+  font-weight: 500
+  font-size: 16px
+  line-height: 27px
+
+  &:visited
+    color: #0f7bff
+
+  &:active, &:hover
+    text-decoration: underline
+
+.sec-works
+  background-color: #f5fcfd
+  height: 635px
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+.works
+  text-align: center
+  background: #f5fcfd url(../img/works/Line.png) no-repeat (center / cover)
+  margin: 0 15%
+
+.sec-works__title
+  font-weight: 500
+  font-size: 32px
+  line-height: 36px
+  padding: 20px 0
+  color: #333333
+  background: url(../img/works/1.png) no-repeat 50% 0%, url(../img/works/1.png) no-repeat 47% 100%
+  margin-bottom: 10px
+
+.sec-works__text
+  font-size: 16px
+  line-height: 27px
+  margin: 0 18% 4%
+  color: #929292
+
+.sec-works__instruction
+  display: flex
+  flex-direction: row
+
+  .col
+    display: flex
+    flex-direction: column
+    margin: 0 20px
+
+.sec-works__instruction-img
+  margin-bottom: 20px
+
+.sec-works__instruction-title
+  margin-bottom: 15px
+  font-weight: 500
+  font-size: 18px
+  line-height: 27px
+  color: #333333
+
+.sec-works__instruction-text
+  font-size: 16px
+  line-height: 27px
+  color: #929292
+
+.col
+  display: flex
+  flex-direction: column
+  margin: 0 20px
+
+.sec-pricing
+  height: 740px
+  display: flex
+
+  > .sec-inner
+    margin: 0 auto
+    justify-content: center
+
+.sec-pricing__container
+  display: flex
+  flex-direction: row
+  height: 78%
+  justify-content: center
+
+.sec-pricing__container-info
+  display: flex
+  justify-content: center
+  flex-direction: column
+  flex-basis: 35%
+  min-width: 250px
+
+.sec-pricing__container-info__title
+  font-weight: 500
+  font-size: 32px
+  line-height: 36px
+  margin-bottom: 20px
+  color: #333333
+
+.sec-pricing__container-info__text
+  font-size: 16px
+  line-height: 27px
+  margin-bottom: 20px
+  color: #929292
+
+.sec-pricing__container-info__period
+  display: flex
+  flex-direction: row
+
+  input
+    font-weight: bold
+    font-size: 16px
+    line-height: 27px
+
+    &:checked
+      background-color: #0f7bff
+
+.sec-pricing__container-block
+  display: flex
+  flex-direction: row
+
+.sec-pricing__container-plans
+  -webkit-box-shadow: 0px 0px 30px 0px #c4c4c4
+  -moz-box-shadow: 0px 0px 30px 0px #c4c4c4
+  -ms-box-shadow: 0px 0px 30px 0px #c4c4c4
+  box-shadow: 0px 0px 30px 0px #c4c4c4
+  padding: 29px 97px
+  text-align: center
+  flex: 0 0 30%
+  justify-content: center
+
+.sec-pricing__container-plans-img
+  margin-bottom: 23px
+
+.sec-pricing__container-plans-name
+  margin-bottom: 23px
+  padding-bottom: 20px
+  font-weight: 500
+  font-size: 18px
+  line-height: 27px
+  border-bottom: 1px solid #E0E0E0
+  color: #333333
+
+.sec-pricing__container-plans-service
+  font-size: 16px
+  line-height: 27px
+  margin-bottom: 10px
+  color: #929292
+
+  p
+    margin-bottom: 5px
+
+.sec-pricing__container-plans-price
+  color: #0f7bff
+  font-weight: 500
+  line-height: 36px
+  font-size: 25px
+  margin-bottom: 33px
+
+  + .button
+    padding: 14px 10px
+
+.sec-pricing__container-plans .price-button
+  margin: 0 -15%
+
+.sec-inner-testimonials
+  display: flex
+  flex-direction: row
+  width: 98vw
+
+.sec-testimonials
+  background-color: #f5fcfd
+  height: 608px
+  display: flex
+  justify-content: center
+  flex-direction: row
+
+.sec-testimonials__img
+  width: 100%
+  flex: 0 1 30%
+
+  img
+    width: 100%
+    margin-right: 20px
+    height: 100%
+    object-fit: contain
+
+.sec-testimonials__container
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  margin: 100px 10px 100px 20px
+  flex: 1 1 70%
+
+.sec-testimonials__container-title
+  font-weight: 500
+  font-size: calc(18px + 15 * (100vw / 1920))
+  line-height: 36px
+  margin-bottom: 20px
+  color: #333333
+
+.sec-testimonials__container-slider
+  background: transparent
+  min-width: 0
+
+.owl-carousel
+  display: block
+  box-sizing: border-box
+  min-width: 0
+
+.slick-list
+  overflow: hidden
+
+.slick-track
+  display: flex
+
+.owl-carousel .slick-dots
+  display: flex
+  padding: 10px 5px
+  align-items: center
+
+.slick-dots
+  button
+    visibility: hidden
+
+  li
+    border-radius: 15px
+    font-size: 0
+    width: 20px
+    height: 10px
+    margin: 0 10px
+    background-color: #D4D4D4
+    border: none
+    transition: all 0.3s ease
+    margin: 0 5px
+
+    &:hover, &:active
+      width: 30px
+      background-color: #0f7bff
+
+  > .slick-active
+    width: 30px
+    background-color: #0f7bff
+
+.slider-item
+  margin: 0 5px
+  background: #fff
+  display: flex
+  flex-direction: column
+  padding: 17px
+
+.slider-item__header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 10px 0
+
+.slider-item__header-col
+  display: flex
+  flex-direction: column
+
+  p
+    &.name
+      font-weight: 500
+      font-size: 18px
+      line-height: 27px
+      color: #333333
+
+    &.role
+      color: #929292
+      font-size: 14px
+      line-height: 27px
+
+.slider-item__body
+  color: #929292
+  font-size: 16px
+  line-height: 27px
+
+.sec-inner-news
+  margin: 0 19%
+  height: 100%
+
+.sec-news__container
+  display: flex
+  flex-direction: column
+  text-align: center
+  height: 960px
+  justify-content: center
+
+.sec-news__title
+  font-weight: 500
+  font-size: 32px
+  line-height: 36px
+  padding: 20px 0
+  margin-bottom: 10px
+  color: #333333
+  background: url(../img/works/1.png) no-repeat 50% 0%, url(../img/works/1.png) no-repeat 46% 100%
+
+.sec-news__text
+  font-size: 16px
+  line-height: 27px
+  margin: 0 18% 4%
+  color: #929292
+
+.sec-news__page
+  display: flex
+  flex-direction: row
+  text-align: center
+  justify-content: space-between
+
+.sec-news__main-page
+  flex: 1 0 40%
+  padding-right: 20px
+  margin: 0 2%
+  text-align: left
+
+.sec-news__main-page-image
+  width: 100%
+  margin-bottom: 30px
+
+  img
+    width: 100%
+
+.sec-news__main-page-title
+  font-weight: 500
+  font-size: 24px
+  line-height: 36px
+  color: #0f7bff
+  margin-bottom: 20px
+
+.sec-news__main-page-text
+  color: #b7b9ba
+  font-size: 16px
+  line-height: 27px
+  margin-bottom: 20px
+
+.sec-news__main-page-read-more
+  font-weight: 500
+  font-size: 16px
+  line-height: 27px
+
+  &:visited
+    color: #0f7bff
+
+  &:active, &:hover
+    text-decoration: underline
+
+.sec-news__pages
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  flex: 0 1 60%
+
+  .item
+    display: flex
+    flex-direction: row
+    margin-bottom: 35px
+
+    img
+      object-fit: contain
+      object-position: center
+      padding-right: 30px
+
+.sec-news__pages-content
+  text-align: left
+  justify-content: center
+  display: flex
+  flex-direction: column
+
+.sec-news__pages-title
+  font-weight: 500
+  font-size: 18px
+  line-height: 28px
+  color: #333333
+  margin-bottom: 10px
+
+.sec-news__pages-text
+  color: #b7b9ba
+  font-size: 16px
+  line-height: 27px
+
+.sec-inner-freetrial
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin: 0 21%
+  height: 100%
+
+.sec-freetrial
+  background-color: #f5fcfd
+  height: 336px
+  align-items: center
+  position: relative
+  top: -2%
+
+.sec-freetrial__block
+  display: flex
+  flex-direction: column
+  margin-right: 100px
+  justify-content: center
+
+.sec-freetrial__block-title
+  font-weight: 500
+  font-size: calc(17px + 15 * (100vw / 1920))
+  line-height: 36px
+  color: #333333
+  margin-bottom: 18px
+
+.sec-freetrial__block-text
+  font-size: 16px
+  line-height: 27px
+  color: #b7b9ba
+
+.sec-freetrial__block .button-freetrial
+  background-color: #0f7bff
+  border-radius: 7px
+  outline: none
+  flex-shrink: 0
+  color: #fff
+  font-weight: bold
+  font-size: 16px
+  line-height: 27px
+  cursor: pointer
+  display: flex
+  align-items: center
+  width: 263px
+  height: 76px
+  justify-content: center
+
+  img
+    margin-left: 10px
+
+  &:hover
+    transition: all 0.3s ease
+
+.sec-widget
+  background-color: #0f7bff
+  height: 828px
+  align-items: center
+  position: relative
+
+.sec-widget__block
+  margin: auto
+
+.sec-widget__block-title
+  font-weight: bold
+  font-size: 36px
+  line-height: 24px
+  color: #fff
+  margin-bottom: 40px
+  text-align: center
+
+.sec-widget__block-form
+  margin: 0 -40%
+
+  input
+    &[type=text]
+      padding: 15px 20px
+      border-radius: 50px 0 0 50px
+      border: 2px solid #fff
+      background-color: #0f7bff
+      color: #fff
+      width: 70%
+      font-size: 16px
+      line-height: 27px
+
+      &::placeholder
+        color: #fff
+        background-color: #0f7bff
+
+    &[type=submit]
+      width: 30%
+      background-color: #fff
+      border: none
+      color: white
+      padding: 15px 32px
+      text-decoration: none
+      margin: 4px -5px
+      cursor: pointer
+      border-radius: 0 50px 50px 0
+      border: 2px solid #fff
+      color: #0f7bff
+      font-weight: bold
+      font-size: 16px
+      line-height: 27px
+
+.sec-inner-widget
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin: 0 21%
+  height: 50%
+
+.footer
+  height: 100%
+
+.sec-footer
+  background-color: #0f7bff
+  height: 100px
+  border-top: 1px solid #fff
+  font-size: 16px
+  line-height: 27px
+  color: #fff
+
+.sec-footer__content
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap-reverse
+  justify-content: space-between
+  height: 100%
+  align-items: center
+
+.sec-footer__content-copyright
+  font-size: calc(10px + 6 * (100vw / 1920))
+
+.sec-footer__content-menu
+  display: flex
+  flex-direction: row
+
+.sec-footer__content-menu-list
+  display: flex
+
+  li
+    padding: 0 44px 0 0
+
+.sec-footer__content-menu-list__link
+  color: #b7b9ba
+  font-size: calc(10px + 8 * (100vw / 1920))
+  line-height: 27px
+
+  &:visited
+    color: #b7b9ba
+    font-size: calc(10px + 8 * (100vw / 1920))
+    line-height: 27px
+
+  &:hover
+    color: #fff
+
+.sec-footer__content-social a
+  padding: 5px
+
+  img
+    vertical-align: middle
+
+.sec-footer__content-scroll-up
+  width: 45px
+  height: 45px
+  background-color: #fff
+  color: #0063dd
+  text-align: center
+  justify-content: center
+  display: flex
+
+  a
+    height: 100%
+    width: 100%
+    display: block
+    color: #0063dd
+    font-size: 36px
+    line-height: 37px
+
+    &:visited
+      height: 100%
+      width: 100%
+      display: block
+      color: #0063dd
+      font-size: 36px
+      line-height: 37px
+
+    img, &:visited img
+      vertical-align: middle
+
+@import "media" // Всегда в конце
